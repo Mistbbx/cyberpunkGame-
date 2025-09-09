@@ -21,7 +21,7 @@ public class createParty : MonoBehaviour
 
         switch (i) {
             case 1: p.c1 = UIController.player;
-                p1.text = ""+UIController.player.role;
+                p1.text = "" + UIController.player.role;
                 break;
             case 2: p.c2 = UIController.player;
                 p2.text = "" + UIController.player.role;
