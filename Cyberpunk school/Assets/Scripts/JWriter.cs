@@ -6,13 +6,16 @@ using System.IO;
 public class JWriter : MonoBehaviour
 {
 
-    public charater player;    // Start is called before the first frame update
+    public Character player;    // Start is called before the first frame update
     void Start()
     {
-        player.bio = "En fix skov ninja fra Fyn";
-        player.hp = 100;
-        player.sta = 90;
-        player.role = charater.Role.Ninja;
+        player.bio = "Im just a little guy";
+        player.Hp = 100;
+        player.cHp = player.Hp;
+        player.Int = 100;
+        player.Str = 90;
+        player.Dex = 10;
+        player.role = Character.Role.littleGuy;
 
         string json = JsonUtility.ToJson(player);
         Debug.Log(json);

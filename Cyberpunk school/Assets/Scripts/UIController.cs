@@ -8,7 +8,7 @@ using TMPro;
 
 public class UIController : MonoBehaviour
 {
-    public Character player;
+    public static Character player;
     public TextMeshProUGUI bio;
     public TextMeshProUGUI Hp;
     public TextMeshProUGUI Str;

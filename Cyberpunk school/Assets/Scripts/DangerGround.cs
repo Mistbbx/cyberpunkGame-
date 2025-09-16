@@ -16,7 +16,7 @@ public class DangerGround : MonoBehaviour
     {
         if (inDanger) {
 
-            charSheet.player.hp--;
+            charSheet.player.Hp--;
         
         }
     }

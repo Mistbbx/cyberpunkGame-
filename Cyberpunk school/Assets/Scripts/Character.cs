@@ -6,6 +6,7 @@ public class Character
 {
     public string bio;
     public int Hp;
+    public int cHp;
     public int Str;
     public int Int;
     public int Dex;

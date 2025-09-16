@@ -7,6 +7,6 @@ using System.IO;
 
 public class charSheet : ScriptableObject
 {
-    public static charater player = new charater();
+    public static Character player = new Character();
   
 }

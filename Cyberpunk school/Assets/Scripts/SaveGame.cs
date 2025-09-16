@@ -2,6 +2,6 @@ using System;
 [Serializable]
 public class SaveGame 
 {
-    public charater player;
+    public Character player;
 
 }
