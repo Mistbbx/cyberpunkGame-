@@ -17,7 +17,7 @@ public class UIHUD : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        GameObject.Find("HP").GetComponent<TextMeshProUGUI>().text = ""+charSheet.player.hp;
+        GameObject.Find("HP").GetComponent<TextMeshProUGUI>().text = ""+charSheet.player.Hp;
         if (Input.GetKeyDown("i"))
             pop.SetActive(true);
     }

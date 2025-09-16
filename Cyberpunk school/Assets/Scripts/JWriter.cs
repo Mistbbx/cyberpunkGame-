@@ -19,7 +19,7 @@ public class JWriter : MonoBehaviour
 
         string json = JsonUtility.ToJson(player);
         Debug.Log(json);
-        string path = "Assets/ninja.json";
+        string path = "Assets/json/ninja.json";
         StreamWriter t = new StreamWriter(path, false);
         t.Write(json);
         t.Close();

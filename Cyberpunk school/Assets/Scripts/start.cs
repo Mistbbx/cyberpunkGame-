@@ -42,7 +42,7 @@ public class start : MonoBehaviour
 
     public void LoadGame() {
 
-        string path = "Assets/SaveGame.json";
+        string path = "Assets/json/SaveGame.json";
         StreamReader r = new StreamReader(path);
         string temp = r.ReadToEnd();
         r.Close();
@@ -62,7 +62,7 @@ public class start : MonoBehaviour
 
         string json = JsonUtility.ToJson(temp);
         Debug.Log(json);
-        string path = "Assets/SaveGame.json";
+        string path = "Assets/json/SaveGame.json";
         StreamWriter t = new StreamWriter(path, false);
         t.Write(json);
         t.Close();

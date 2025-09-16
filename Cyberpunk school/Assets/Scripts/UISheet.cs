@@ -7,8 +7,10 @@ using UnityEngine.UI;
 
 public class UISheet : MonoBehaviour
 {
-    public TextMeshProUGUI hp;
-    public TextMeshProUGUI sta;
+    public TextMeshProUGUI Hp;
+    public TextMeshProUGUI Str;
+    public TextMeshProUGUI Int;
+    public TextMeshProUGUI Dex;
     public TextMeshProUGUI bio;
     public TextMeshProUGUI role;
     public index CharIndex;
@@ -17,7 +19,7 @@ public class UISheet : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        string path = "Assets/index.json";
+        string path = "Assets/json/index.json";
         StreamReader r = new StreamReader(path);
         string temp = r.ReadToEnd();
         r.Close();
@@ -30,15 +32,17 @@ public class UISheet : MonoBehaviour
     void Update()
     {
 
-        string path = "Assets/" + CharIndex.files[i] + ".json";
+        string path = "Assets/json/" + CharIndex.files[i] + ".json";
         StreamReader r = new StreamReader(path);
         string temp = r.ReadToEnd();
         r.Close();
-        charater player = JsonUtility.FromJson<charater>(temp);
+        Character player = JsonUtility.FromJson<Character>(temp);
         charSheet.player = player;
 
-        hp.text = "Hp : " + charSheet.player.hp;
-        sta.text = "Sta : " + charSheet.player.sta;
+        Hp.text = "Hp : " + charSheet.player.Hp;
+        Str.text = "Str : " + charSheet.player.Str;
+        Dex.text = "Dex : " + charSheet.player.Dex;
+        Int.text = "Int : " + charSheet.player.Int;
         bio.text = "Biography : " + charSheet.player.bio;
         role.text = "Role : " + charSheet.player.role;
         img.sprite = (Sprite)Resources.Load(CharIndex.files[i], typeof(Sprite));

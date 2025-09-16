@@ -27,7 +27,7 @@ public class gameSetup : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        string path = "Assets/" + PlayerPrefs.GetString("Cparty") + ".json";
+        string path = "Assets/json/" + PlayerPrefs.GetString("Cparty") + ".json";
         StreamReader t = new StreamReader(path);
         string temp = t.ReadToEnd();
         t.Close();
@@ -43,13 +43,13 @@ public class gameSetup : MonoBehaviour
         t3.text = "" + p.c3.role;
         t4.text = "" + p.c4.role;
 
-        hp1.maxValue = p.c1.hp;
+        hp1.maxValue = p.c1.Hp;
         hp1.value = p.c1.cHp;
-        hp2.maxValue = p.c2.hp;
+        hp2.maxValue = p.c2.Hp;
         hp2.value = p.c2.cHp;
-        hp3.maxValue = p.c3.hp;
+        hp3.maxValue = p.c3.Hp;
         hp3.value = p.c3.cHp;
-        hp4.maxValue = p.c4.hp;
+        hp4.maxValue = p.c4.Hp;
         hp4.value = p.c4.cHp;
         
 

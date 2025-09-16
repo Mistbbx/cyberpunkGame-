@@ -16,7 +16,7 @@ public class Writer : MonoBehaviour
 
         string json = JsonUtility.ToJson(player);
         Debug.Log(json);
-        string path = "Assets/littleguy.json";
+        string path = "Assets/json/littleguy.json";
         StreamWriter t = new StreamWriter(path, false);
         t.Write(json);
         t.Close();

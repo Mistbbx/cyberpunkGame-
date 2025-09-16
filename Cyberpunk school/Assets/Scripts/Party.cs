@@ -6,8 +6,8 @@ using System;
 public class Party 
 {
     public string partyName;
-    public charater c1;
-    public charater c2;
-    public charater c3;
-    public charater c4;
+    public Character c1;
+    public Character c2;
+    public Character c3;
+    public Character c4;
 }

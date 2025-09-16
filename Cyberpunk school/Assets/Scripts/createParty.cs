@@ -42,7 +42,7 @@ public class createParty : MonoBehaviour
         PlayerPrefs.SetString("Cparty", pName);
         string json = JsonUtility.ToJson(p);
         Debug.Log(json);
-        string path = "Assets/"+p.partyName+".json";
+        string path = "Assets/json/"+p.partyName+".json";
         StreamWriter t = new StreamWriter(path, false);
         t.Write(json);
         t.Close();
