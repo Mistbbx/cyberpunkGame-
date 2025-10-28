@@ -389,7 +389,7 @@ GameObject:
   - component: {fileID: 92610776}
   - component: {fileID: 92610775}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Name
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -523,6 +523,9 @@ GameObject:
   - component: {fileID: 152536689}
   - component: {fileID: 152536688}
   - component: {fileID: 152536687}
+  - component: {fileID: 152536692}
+  - component: {fileID: 152536691}
+  - component: {fileID: 152536693}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -613,6 +616,96 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &152536691
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 152536686}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87daec21421d4f2499003ccec43b3f9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bio: {fileID: 546230233}
+  Hp: {fileID: 3342290}
+  Str: {fileID: 810754009}
+  Int: {fileID: 2138595547}
+  Dex: {fileID: 450407293}
+  Role: {fileID: 92610775}
+  f:
+    filnavn: []
+  i: 0
+--- !u!114 &152536692
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 152536686}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0a2a873cb14c5a4099e9a8ed3bb7476, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &152536693
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 152536686}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2a51e3f58806e9479b30c8f510ba8ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 1
+  p:
+    partyName: 
+    c1:
+      bio: 
+      Hp: 0
+      cHp: 0
+      Str: 0
+      Int: 0
+      Dex: 0
+      assetsName: 
+      role: 0
+    c2:
+      bio: 
+      Hp: 0
+      cHp: 0
+      Str: 0
+      Int: 0
+      Dex: 0
+      assetsName: 
+      role: 0
+    c3:
+      bio: 
+      Hp: 0
+      cHp: 0
+      Str: 0
+      Int: 0
+      Dex: 0
+      assetsName: 
+      role: 0
+    c4:
+      bio: 
+      Hp: 0
+      cHp: 0
+      Str: 0
+      Int: 0
+      Dex: 0
+      assetsName: 
+      role: 0
+  pName: 
+  p1: {fileID: 0}
+  p2: {fileID: 0}
+  p3: {fileID: 0}
+  p4: {fileID: 0}
+  partyName: {fileID: 0}
 --- !u!1 &319280811
 GameObject:
   m_ObjectHideFlags: 0
@@ -955,7 +1048,7 @@ GameObject:
   - component: {fileID: 546230234}
   - component: {fileID: 546230233}
   m_Layer: 5
-  m_Name: Text (TMP) (4)
+  m_Name: Bio
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1134,7 +1227,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Button
+  m_text: 'Next
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1836,7 +1931,7 @@ GameObject:
   - component: {fileID: 1544123374}
   - component: {fileID: 1544123373}
   m_Layer: 5
-  m_Name: Text (TMP) (5)
+  m_Name: Hp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2015,7 +2110,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Button
+  m_text: Previous
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
