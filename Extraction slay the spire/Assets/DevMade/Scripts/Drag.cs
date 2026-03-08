@@ -55,12 +55,13 @@ public class Drag : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHand
             }
             else {
                 this.transform.SetParent(parentToReturnTo);
+                this.gameObject.name = "test1";
             }
             //this.transform.SetParent(parentToReturnTo);
             GetComponent<CanvasGroup>().blocksRaycasts = true;
             //_identifier = DropZone.dropZoneObject.GetComponentInChildren<DisplayCard>().id;
             //Debug.Log(_identifier);
-            this.gameObject.name = "test1";
+            
         }
     }
     
