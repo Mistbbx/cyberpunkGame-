@@ -1,12 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Data.Common;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
 public class DropZone : MonoBehaviour, IDropHandler, IPointerEnterHandler, IPointerExitHandler
 {
-    public static Transform dropZone = null;
+    public static GameObject dropZoneObject = null;
+    public static Transform dropZoneTransform = null;
+
     public void OnPointerEnter(PointerEventData eventData)
     {
 
@@ -16,7 +19,10 @@ public class DropZone : MonoBehaviour, IDropHandler, IPointerEnterHandler, IPoin
         if (TurnSystem.isYourTurn)
         {
             Debug.Log("Drop");
-            dropZone = this.transform;
+            //dropZoneObject = eventData.pointerCurrentRaycast.gameObject;
+            dropZoneObject = this.gameObject;
+            
+            
         }
     }
     public void OnPointerExit(PointerEventData eventData)

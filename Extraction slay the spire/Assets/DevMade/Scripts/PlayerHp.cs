@@ -12,14 +12,11 @@ public class PlayerHp : MonoBehaviour
     public float hp;
     public Image HealthImage;
     public TextMeshProUGUI hpText;
-    // Start is called before the first frame update
     void Start()
     {
         maxHp = 1200;
         staticHp = 1000;
     }
-
-    // Update is called once per frame
     void Update()
     {
         hp = staticHp;

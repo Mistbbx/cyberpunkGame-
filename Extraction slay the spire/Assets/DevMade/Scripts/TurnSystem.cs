@@ -11,7 +11,7 @@ public class TurnSystem : MonoBehaviour
     public TextMeshProUGUI turnText;
 
     public int maxMana;
-    public int currentMana;
+    public static int currentMana;
     public TextMeshProUGUI manaText;
 
     public static bool startTurn;
