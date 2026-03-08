@@ -35,13 +35,6 @@ public class DisplayCard : MonoBehaviour
     {
         numberOfCardsInDeck = PlayerDeck.deckSize;
         displayCard.Add(CardDatabase.cardList[0]);
-        
-        /*for (int i = 0; i < 5; i++)
-        {
-            displayCard.Add(CardDatabase.cardList[i]);
-            //displayCard[0] = CardDatabase.cardList[id];
-            Debug.Log(displayCard[i].id);
-        }*/
     }
 
     // Update is called once per frame

@@ -2593,7 +2593,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnText: {fileID: 2088204895}
   maxMana: 0
-  currentMana: 0
   manaText: {fileID: 1582976178}
 --- !u!4 &1995785791
 Transform:
