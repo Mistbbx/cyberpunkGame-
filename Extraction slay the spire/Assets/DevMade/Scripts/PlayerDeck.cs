@@ -21,7 +21,7 @@ public class PlayerDeck : MonoBehaviour
     public GameObject CardToHand;
     public GameObject[] Clones;
     public GameObject Hand;
-    
+
     // Start is called before the first frame update
     void Start()
     {
@@ -30,7 +30,7 @@ public class PlayerDeck : MonoBehaviour
 
         for (int i = 0; i < deckSize; i++)
         {
-            x = Random.Range(1, 4);
+            x = Random.Range(1, 5);
             deck[i] = CardDatabase.cardList[x];
         }
 
